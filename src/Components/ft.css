@@ -1,0 +1,152 @@
+.upload-time-slots {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.dates {
+  margin-bottom: 20px;
+}
+
+.date-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #ffa500;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.date-button.selected,
+.date-button:hover {
+  background-color: #ff7f50;
+}
+
+.time-slots-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  width: 60%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.time-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.time-slot {
+  padding: 10px;
+  border: none;
+  background-color: #87ceeb;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.time-slot.selected,
+.time-slot:hover {
+  background-color: #4682b4;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #94c7d9;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.bookings-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 16px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  /* Light background for the list */
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-item {
+  flex: 1 1 calc(30% - 16px);
+  /* Responsive: 3 items per row, adjust for spacing */
+  background-color: #ffffff;
+  /* White background for each card */
+  border: 1px solid #ddd;
+  /* Subtle border */
+  border-radius: 8px;
+  max-width: 500px;
+  /* Rounded corners */
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+  /* Ensure text is aligned */
+}
+
+.timeslot-button {
+  padding: 10px 15px;
+  margin: 20px;
+  font-size: 14px;
+  background-color: #004de8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* Highlight effect on hover */
+}
+
+.booking-item p {
+  margin: 8px 0;
+  /* Consistent spacing between text */
+  font-size: 14px;
+  /* Standard font size */
+  color: #333;
+  /* Dark gray text */
+  line-height: 1.5;
+  /* Improve readability */
+}
+
+.booking-item strong {
+  color: #007BFF;
+  /* Highlight labels with a blue color */
+}
+
+.booking-item:nth-child(odd) {
+  background-color: #f8f9fa;
+  /* Alternating background for visual interest */
+}

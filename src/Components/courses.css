@@ -1,0 +1,235 @@
+
+/* Container for the course form */
+.CoursesBlock {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Form Header */
+.CoursesBlock h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #555;
+}
+
+input[type="file"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+input[type="text"]:focus {
+  border-color: #55efc4;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+button[type="submit"] {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #55efc4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #22dba6;
+}
+
+/* Courses List Styling */
+.courses-list {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.courses-list h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.courses-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.courses-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.courses-list img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.courses-list h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.courses-list p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .CoursesBlock {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .CoursesBlock h2 {
+    font-size: 2rem;
+  }
+
+  button[type="submit"] {
+    padding: 10px 12px;
+  }
+
+  .courses-list li {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .courses-list img {
+    max-width: 150px;
+  }
+
+  .courses-list h4 {
+    font-size: 1rem;
+  }
+
+  .courses-list p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .CoursesBlock {
+    padding: 10px;
+  }
+
+  .testimonalBlock h2 {
+    font-size: 1.5rem;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .courses-list li {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .courses-list img {
+    max-width: 130px;
+  }
+
+  .courses-list h4 {
+    font-size: 0.9rem;
+  }
+
+  .courses-list p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  height: 300px;
+}
+
+/* Card Styles */
+.card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 10px;
+}
+
+/* Card Content */
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #777;
+  margin: 0;
+}
+

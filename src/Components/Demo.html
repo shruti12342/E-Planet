@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <style>
+    /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+}
+
+body {
+  background-color: #f1f4f8;
+  color: #333;
+  font-size: 16px;
+}
+
+.main-content {
+  padding-top: 60px;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2d3436;
+  color: white;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  font-size: 24px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #55efc4;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: #55efc4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #1d8e89;
+}
+
+/* Main Content Styles */
+header h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2d3436;
+}
+
+/* Overview Section */
+.overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+  font-size: 20px;
+  color: #2d3436;
+}
+
+.stat-card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #55efc4;
+}
+
+/* Chart Section */
+.chart-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.chart-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #2d3436;
+}
+
+.chart-card {
+  background-color: #f9fafb;
+  padding: 20px;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b2bec3;
+  font-size: 18px;
+}
+
+/* Recent Activity Section */
+.recent-activity {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity h2 {
+  font-size: 22px;
+  color: #2d3436;
+  margin-bottom: 15px;
+}
+
+.recent-activity ul {
+  list-style: none;
+}
+
+.recent-activity ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.recent-activity ul li:last-child {
+  border-bottom: none;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <h2>Admin Panel</h2>
+      <div class="navbar-links">
+        <a href="#">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+        <button class="logout-btn">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <h1>Welcome Back, Admin</h1>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="overview">
+      <div class="stat-card">
+        <h3>Total Sales</h3>
+        <p>$32,450</p>
+      </div>
+      <div class="stat-card">
+        <h3>Active Users</h3>
+        <p>1,980</p>
+      </div>
+      <div class="stat-card">
+        <h3>Orders Pending</h3>
+        <p>120</p>
+      </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section class="chart-section">
+      <h2>Sales Trends</h2>
+      <div class="chart-card">
+        <p>Placeholder for a chart.</p>
+      </div>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="recent-activity">
+      <h2>Recent Activity</h2>
+      <ul>
+        <li>User John created a new order.</li>
+        <li>User Alice updated her profile.</li>
+        <li>User Mark raised a ticket.</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>

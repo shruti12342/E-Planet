@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Container for the form */
+#testimonalBlock {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Form Header */
+ h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #555;
+}
+
+input[type="file"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #55efc4;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Textarea Styling */
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Submit Button */
+.upload-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #55efc4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #22dba6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  #testimonalBlock {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  #testimonalBlock h2 {
+    font-size: 1.5rem;
+  }
+}
+
+#testimonalBlock {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section for Testimonal Cards */
+#testimonalImageSection {
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centers the cards horizontally */
+  align-items: center; /* Centers the cards vertically */
+}
+
+.testimonal-card {
+  width: 250px; /* Fixed width for cards */
+  height: 300px; /* Fixed height for cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures consistent spacing inside */
+}
+
+.testimonal-image {
+  width: 100%; /* Ensures image takes full width of card */
+  height: auto; /* Fixed height for images */
+  object-fit: cover; /* Maintains aspect ratio while filling the space */
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.testimonal-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.testimonal-description {
+  font-size: 1rem;
+  color: #555;
+  padding: 5px;
+  overflow: hidden; /* Hides overflowing text */
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevents text from wrapping */
+}

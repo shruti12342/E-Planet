@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.toggle-buttons button {
+    background-color: #55efc4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-buttons button.active {
+    background-color: #55efc4;
+}
+
+.toggle-buttons button:hover {
+    background-color: #31ae8a;
+}
+
+/* Form Section (Offline) */
+#offlineForm {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#offlineForm h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#offlineForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#offlineForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#offlineForm button {
+    background-color: #55efc4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+#offlineForm button:hover {
+    background-color: #31ae8a;
+}
+
+/* Display Section (Offline) */
+#dataDisplay {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.class-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.class-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.class-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.class-card ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-top: 10px;
+}
+
+.class-card p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #offlineForm {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .class-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .class-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #offlineForm {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .class-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .class-card {
+        padding: 10px;
+    }
+}

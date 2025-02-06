@@ -1,0 +1,42 @@
+/* General Styles for Pages */
+.page-container {
+    padding: 80px 20px; /* Padding to account for the fixed navbar */
+    margin: 0 auto;
+    max-width: 1200px; /* Center the content and set a maximum width */
+    text-align: center; /* Center the text */
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px;
+  }
+  
+  /* Heading Styles */
+  .page-container h1 {
+    font-size: 32px;
+    color: #2d3436;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Paragraph Styles */
+  .page-container p {
+    font-size: 18px;
+    color: #636e72;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust for smaller screens */
+  @media (max-width: 768px) {
+    .page-container {
+      padding: 60px 10px;
+    }
+  
+    .page-container h1 {
+      font-size: 28px;
+    }
+  
+    .page-container p {
+      font-size: 16px;
+    }
+  }
+  
